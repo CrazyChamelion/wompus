@@ -73,9 +73,9 @@ while alive:
 
 
         #check if fell in a pit. If yes, player dies, game ends
-        if playerLocationY==pitY and playerLocationX==pitX:
-            alive=False  
-            print(Fore.RED,Back.GREEN, "weee it was a fun fall but you hit the bottom and you died", Style.RESET_ALL)
+    if playerLocationY==pitY and playerLocationX==pitX:
+        alive=False  
+        print(Fore.RED,Back.GREEN, "weee it was a fun fall but you hit the bottom and you died", Style.RESET_ALL)
         
         #check if found exit. If yes, player wins, game ends
         if playerLocationX==exitX and playerLocationY==exitY:
