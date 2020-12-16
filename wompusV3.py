@@ -63,7 +63,7 @@ while alive:
     if action== "s":
         
         if arrows==0:
-            print("out of arrows cant shhot anymore")
+            print("out of arrows cant shoot anymore")
         else:
             shoot = input(" where do you want to shoot, north(n) south(s) east(e) west(w)")
             print()
@@ -78,9 +78,9 @@ while alive:
         print(Fore.RED,Back.GREEN, "weee it was a fun fall but you hit the bottom and you died", Style.RESET_ALL)
         
         #check if found exit. If yes, player wins, game ends
-        if playerLocationX==exitX and playerLocationY==exitY:
-            alive=False
-            print(Fore.BLUE,Back.YELLOW, "yay you found the exit you feel the breeze and sun on your face", Style.RESET_ALL)
+    if playerLocationX==exitX and playerLocationY==exitY:
+        alive=False
+        print(Fore.BLUE,Back.YELLOW, "yay you found the exit you feel the breeze and sun on your face", Style.RESET_ALL)
     
     #check if a pit is nearby
     if pitX== playerLocationX+1 and pitY==playerLocationY:
